@@ -1,12 +1,13 @@
 const form = document.getElementById("form")
 const thead = document.getElementById("thead")
-let linhas = '';
+let linhas = ''; 
+const nomes = []
+const numeros = []
 
     form.addEventListener("submit", function(e){
-        e.preventDefault()
-        adicionarLinha()
-        atualizaTabela()
-         
+    e.preventDefault()
+    adicionarLinha()
+    atualizaTabela()
     })
 
  function adicionarLinha(){
@@ -18,12 +19,12 @@ let linhas = '';
     linha += `<td>${numero.value}</td>`;
     linha += "</tr>";
     linhas += linha
-    
-    numero.value = ""
-    nome.value = ""
+
+    nomes.push(nome.value)
+    numeros.push(numero.value)
     } 
 
-    function atualizaTabela(){
-        const corpoTabela = document.getElementById("tbody");
-        corpoTabela.innerHTML = linhas; 
+function atualizaTabela(){
+    const corpoTabela = document.getElementById("tbody");
+    corpoTabela.innerHTML = linhas; 
     }
