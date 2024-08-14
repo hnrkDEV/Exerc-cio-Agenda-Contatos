@@ -22,6 +22,9 @@ const numeros = []
 
     nomes.push(nome.value)
     numeros.push(numero.value)
+
+    nome.value = ""
+    numero.value = ""
     } 
 
 function atualizaTabela(){
