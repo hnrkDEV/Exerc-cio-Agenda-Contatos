@@ -13,20 +13,31 @@ body {
 }
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     background-color: rgba(255,255,255,0.5);
     width: 900px;
     height: 700px;
-    padding: 20px;
     border-radius: 20px;
     backdrop-filter: blur(10px);
     box-shadow: #000000 4px 4px 20px;
+}
+.containerForm {
+    display: flex;
+    background-color: rgba(255,255,255,0.8);
+    padding: 0 150px;
+    margin-bottom: 0px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 100%;
+    align-items: center;
+
 }
 form {
     display: inline;
     align-items: center;
     justify-content: center;
+    
 }
 label {
     display: block;
@@ -37,6 +48,9 @@ button{
     display: block;
     margin: auto;
     margin-top: 20px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
   }
 input {
     width: 200px;
