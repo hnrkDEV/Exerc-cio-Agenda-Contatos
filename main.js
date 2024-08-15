@@ -8,6 +8,7 @@ const numeros = []
     e.preventDefault()
     adicionarLinha()
     atualizaTabela()
+    document.getElementById('table').style.display = 'inline-block'
     })
 
  function adicionarLinha(){
@@ -31,3 +32,6 @@ function atualizaTabela(){
     const corpoTabela = document.getElementById("tbody");
     corpoTabela.innerHTML = linhas; 
     }
+
+
+

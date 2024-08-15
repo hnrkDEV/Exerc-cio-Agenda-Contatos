@@ -115,7 +115,7 @@ h1 {
 }
 
 table {
-    display: inline-block;
+    display: none;
     margin: auto;
     max-height: 400px;
     overflow: auto;
